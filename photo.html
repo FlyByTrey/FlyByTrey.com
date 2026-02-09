@@ -1,0 +1,140 @@
+<!DOCTYPE HTML>
+<!--
+	Fly By Trey — Photo
+-->
+<html>
+	<head>
+		<title>Photo — Fly By Trey</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Fly By Trey</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+							<li class="active"><a href="photo.html">Photo</a></li>
+							<li><a href="video.html">Video</a></li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.instagram.com/flybytrey/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="https://www.youtube.com/@FlyByTrey" class="icon brands fa-youtube"><span class="label">YouTube</span></a></li>
+							<li><a href="https://www.facebook.com/profile.php?id=100093203905971" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="mailto:flybytrey@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+						<section class="post">
+							<header class="major">
+								<h1>Photo Gallery</h1>
+								<p>Selected aerial and ground photography. Click images to view larger.</p>
+							</header>
+							<div class="image main"><img src="images/pic01.jpg" alt="" /></div>
+							<p>Contact for full galleries and prints.</p>
+						</section>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section>
+							<form id="contact-form" method="POST" action="https://formspree.io/f/xojnvewl">
+								<div class="fields">
+									<div class="field">
+										<label for="name">Name</label>
+										<input type="text" name="name" id="name" />
+									</div>
+									<div class="field">
+										<label for="email">Email</label>
+										<input type="text" name="_replyto" id="email" />
+									</div>
+									<div class="field">
+										<label for="message">Message</label>
+										<textarea name="message" id="message" rows="3"></textarea>
+									</div>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" /></li>
+								</ul>
+							</form>
+						</section>
+						<section class="split contact">
+							<section class="alt">
+								<h3>Locations</h3>
+								<p>Louisville, KY — Available for travel<br />Contact for bookings & availability.</p>
+							</section>
+							<section>
+								<h3>Phone</h3>
+								<p><a href="tel:+15028361682"><!--(502) 836-1682--></a></p>
+							</section>
+							<section>
+								<h3>Email</h3>
+								<p><a href="mailto:flybytrey@gmail.com">flybytrey@gmail.com</a></p>
+							</section>
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<li><a href="https://www.instagram.com/flybytrey/" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="https://www.youtube.com/@FlyByTrey" class="icon brands alt fa-youtube"><span class="label">YouTube</span></a></li>
+									<li><a href="https://www.facebook.com/profile.php?id=100093203905971" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+									<li><a href="mailto:flybytrey@gmail.com" class="icon alt fa-envelope"><span class="label">Email</span></a></li>
+								</ul>
+							</section>
+						</section>
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Fly By Trey</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+			<script>
+			document.addEventListener('DOMContentLoaded', function () {
+				var form = document.getElementById('contact-form');
+				if (!form) return;
+				form.addEventListener('submit', function (e) {
+					if (form.action.indexOf('yourFormId') !== -1) {
+						e.preventDefault();
+						var name = (form.querySelector('[name="name"]') || {}).value || '';
+						var email = (form.querySelector('[name="_replyto"]') || {}).value || '';
+						var message = (form.querySelector('[name="message"]') || {}).value || '';
+						var subject = 'Website contact from ' + (name || email || 'Website');
+						var body = 'Name: ' + name + '\nEmail: ' + email + '\n\nMessage:\n' + message;
+						var mailto = 'mailto:flybytrey@gmail.com'
+							+ '?subject=' + encodeURIComponent(subject)
+							+ '&body=' + encodeURIComponent(body);
+						window.location.href = mailto;
+					}
+				});
+			});
+			</script>
+
+	</body>
+</html>
